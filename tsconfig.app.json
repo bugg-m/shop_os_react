@@ -29,6 +29,7 @@
       "@assets/*": ["assets/*"],
       "@components/*": ["components/*"],
       "@features/*": ["features/*"],
+      "@hooks/*": ["hooks/*"],
       "@router/*": ["router/*"],
       "@static/*": ["static/*"],
       "@/types/*": ["types/*"],

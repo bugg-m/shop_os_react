@@ -2,7 +2,7 @@ import React from 'react';
 import { cn } from '@utils/ui-design';
 import spinner from '@assets/icons/spinner-icon.svg';
 import { IButtonProps } from '@/types/ui-types';
-import Image from '@components/image/Image';
+import Icon from '@components/icon/Icon';
 
 const Button: React.FC<IButtonProps> = ({
   variant = 'primary',
@@ -36,13 +36,13 @@ const Button: React.FC<IButtonProps> = ({
       onClick={onClick}
       disabled={loading || disabled}
       className={cn(
-        `flex items-center justify-center gap-3 rounded-md px-6 py-3 text-base font-normal transition-all ${variantStyles[variant]} ${shadowStyles[shadowVariant]}`,
+        `flex items-center justify-center gap-1 rounded-md px-4 py-2 text-sm font-normal transition-all md:gap-3 md:px-6 md:py-3 md:text-base ${variantStyles[variant]} ${shadowStyles[shadowVariant]}`,
         className
       )}
       {...props}
     >
-      {iconLeft && !loading && <span>{iconLeft}</span>}
-      {loading && <Image src={spinner} alt="spinner" className="size-6 animate-spin" />}
+      {iconLeft && !loading && iconLeft}
+      {loading && <Icon src={spinner} alt="spinner" className="size-6 animate-spin" />}
       <span>{loading ? 'Generating...' : value}</span>
     </button>
   );

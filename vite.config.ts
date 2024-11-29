@@ -15,6 +15,7 @@ export default defineConfig({
       '@assets': '/src/assets',
       '@components': '/src/components',
       '@features': '/src/features',
+      '@hooks': '/src/hooks',
       '@router': '/src/router',
       '@static': '/src/static',
       '@/types': '/src/types',
