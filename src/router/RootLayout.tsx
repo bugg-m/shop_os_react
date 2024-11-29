@@ -18,7 +18,7 @@ function RootLayout() {
         <section className="fixed top-0 z-40 w-full">
           <NavHeader />
         </section>
-        <div className="flex size-full min-h-screen items-center justify-center overflow-auto px-10 py-20">
+        <div className="size-full min-h-screen overflow-auto px-10 py-20">
           <Outlet />
         </div>
         <section className="fixed bottom-0 z-40 w-full">

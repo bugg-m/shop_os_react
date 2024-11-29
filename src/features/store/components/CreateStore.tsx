@@ -11,7 +11,7 @@ import Icon from '@components/icon/Icon';
 const CreateStore: React.FC = () => {
   return (
     <ContainerWrapper className="items-start">
-      <div className="mx-auto w-full px-5 md:w-3/4 lg:w-2/3">
+      <div className="mx-auto w-full md:w-3/4 md:px-5 lg:w-2/3">
         <header>
           <Header label="Create a new store" />
         </header>
@@ -45,8 +45,8 @@ const CreateStore: React.FC = () => {
                 key={label}
                 variant="outline"
                 value={label}
-                iconLeft={<Icon src={src} alt={label} />}
-                className="w-full rounded-xl md:w-auto"
+                iconLeft={<Icon src={src} alt={label} className="size-4 md:size-5" />}
+                className="w-full text-nowrap rounded-xl text-xs md:w-auto"
               />
             ))}
           </div>
